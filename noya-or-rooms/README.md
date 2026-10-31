@@ -8,6 +8,10 @@
 >
 > **Update after research (Saudi MoH sources, see §7):** No published Saudi MoH rule bans logos or printing on scrubs. The public rules are about **infection control**: the OR must have **no decorative parts** and **only necessary items**, walls/floor/ceiling must be seamless, and scrubs must be facility-laundered. So the "no-print" limits in Noya's agreement are probably **contract-specific**. Get the clause itself; nothing published replaces it.
 >
+> **Confirmed print rule (from Noya):** any **single-use wearable is never printed** (masks, disposable caps, disposable gowns, gloves, shoe covers, disposable patient gowns). **Reusable items can be printed** (scrubs, fabric caps, warm-up jackets, reusable patient gowns, blankets), provided the print survives the 71 °C / 25 min wash. This replaces the assumptions in §3.2 and §4.
+>
+> Presentation: `Noya_OR_Patient_Journey_and_Branding.pptx` (source: `build/build_deck.js`).
+>
 > The key idea: **"can't be printed" doesn't mean "can't be branded."** In the OR, the brand comes through **colour, weave, light, sound, form and how staff behave**, not through printed logos.
 
 ---
