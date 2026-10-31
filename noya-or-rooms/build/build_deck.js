@@ -8,19 +8,22 @@ const fa = require("react-icons/fa");
 const { applyTheme } = require(require("path").join(process.argv[2], "scripts/apply_theme.js"));
 const OUT = process.argv[3];
 
-// Placeholder palette until Noya brand guide is supplied
+// Noya brand palette (from noyaclinic.sa: logo burgundy, blush, peach, near-black)
 const HEX = {
-  deep: "0F3D47", teal: "1F7A74", mint: "E4F2EF", sand: "F2E8DC",
-  coral: "D9734E", ink: "1D2B30", grey: "5F6F73", white: "FFFFFF",
+  deep: "6D3636", teal: "9C5B55", mint: "F9E5E5", sand: "FBEFE6",
+  coral: "B07445", ink: "111112", grey: "8E8E9E", white: "FFFFFF",
 };
+const fs = require("fs"), path = require("path");
+const LOGO = (f) => "image/png;base64," + fs.readFileSync(path.join(__dirname, "assets", f)).toString("base64");
+const LOGO_AR = 2.83; // width / height of cropped logo
 const THEME = {
   name: "Noya OR",
   headFontFace: "Cambria",
   bodyFontFace: "Calibri",
   colors: {
     dk1: HEX.ink, lt1: HEX.white, dk2: HEX.deep, lt2: HEX.mint,
-    accent1: HEX.teal, accent2: HEX.coral, accent3: "6B3E75", accent4: "1F3A5F",
-    accent5: "8A9199", accent6: HEX.sand, hlink: HEX.teal, folHlink: "6B3E75",
+    accent1: HEX.teal, accent2: HEX.coral, accent3: "F3C79E", accent4: "423E3E",
+    accent5: HEX.grey, accent6: HEX.sand, hlink: HEX.deep, folHlink: HEX.teal,
   },
 };
 
@@ -44,6 +47,7 @@ async function icon(name, color, size = 256) {
     title: "Title Dark",
     background: { color: C.text2 },
     objects: [
+      { image: { x: 0.6, y: 0.5, w: 1.0 * LOGO_AR * 0.75, h: 0.75, data: LOGO("noya_logo_white.png") } },
       { placeholder: { options: { name: "title", type: "title", x: 0.6, y: 1.5, w: 8.8, h: 1.6, fontSize: 40, align: "left", bold: true, color: C.background1, valign: "bottom", margin: 0 }, text: "" } },
       { placeholder: { options: { name: "body", type: "body", x: 0.6, y: 3.3, w: 8.8, h: 1.0, fontSize: 18, color: C.background2, valign: "top", margin: 0 }, text: "" } },
     ],
@@ -52,6 +56,7 @@ async function icon(name, color, size = 256) {
     title: "Section Dark",
     background: { color: C.text2 },
     objects: [
+      { image: { x: 0.6, y: 0.5, w: LOGO_AR * 0.45, h: 0.45, data: LOGO("noya_logo_white.png") } },
       { placeholder: { options: { name: "title", type: "title", x: 0.6, y: 2.0, w: 8.8, h: 1.0, fontSize: 40, align: "left", bold: true, color: C.background1, valign: "bottom", margin: 0 }, text: "" } },
       { placeholder: { options: { name: "body", type: "body", x: 0.6, y: 3.1, w: 8.8, h: 0.8, fontSize: 16, color: C.background2, valign: "top", margin: 0 }, text: "" } },
     ],
@@ -63,7 +68,8 @@ async function icon(name, color, size = 256) {
     margin: [0.5, 0.5, 0.5, 0.5],
     objects: [
       { placeholder: { options: { name: "title", type: "title", x: 0.5, y: 0.3, w: 9.0, h: 0.75, fontSize: 30, align: "left", bold: true, color: C.text2, valign: "middle", margin: 0 }, text: "" } },
-      { text: { text: "Noya Clinics  |  OR Launch", options: { x: 0.5, y: 5.15, w: 5, h: 0.3, fontSize: 10, color: C.accent5, margin: 0 } } },
+      { image: { x: 0.5, y: 5.1, w: LOGO_AR * 0.3, h: 0.3, data: LOGO("noya_logo_burgundy.png") } },
+      { text: { text: "|  OR Launch", options: { x: 0.5 + LOGO_AR * 0.3 + 0.12, y: 5.1, w: 3, h: 0.3, fontSize: 10, color: C.accent5, margin: 0, valign: "middle" } } },
     ],
     slideNumber: { x: 9.0, y: 5.15, w: 0.5, h: 0.3, fontSize: 10, color: C.accent5, align: "right" },
   });
@@ -86,7 +92,7 @@ async function icon(name, color, size = 256) {
   let s = pres.addSlide({ masterName: "Title Dark", sectionTitle: "Opening" });
   s.addText("Noya Operating Rooms", { placeholder: "title" });
   s.addText("Patient journey, OR branding & uniform system", { placeholder: "body" });
-  T(s, "Colours shown are placeholders until the Noya brand guide is applied", { x: 0.6, y: 4.9, w: 8.8, h: 0.3, fontSize: 11, color: C.background2, italic: true });
+  T(s, "Operating Rooms Launch  |  Riyadh", { x: 0.6, y: 4.9, w: 8.8, h: 0.3, fontSize: 12, color: C.background2 });
   s.addNotes("Purpose: align management on the patient journey for the new ORs, how we brand the space within MoH infection-control rules, and the uniform system.");
 
   // ---------- 2. Big idea ----------
@@ -209,7 +215,7 @@ async function icon(name, color, size = 256) {
     T(s, m[0], { x: x + 0.9, y: y + 0.05, w: 1.95, h: 0.4, fontSize: 15, bold: true, color: C.text2 });
     T(s, m[1], { x: x + 0.9, y: y + 0.45, w: 1.95, h: 1.1, fontSize: 12, color: C.text1, valign: "top" });
   });
-  T(s, "Costs almost nothing, and supports WHO safety-checklist culture.", { x: 0.5, y: 4.75, w: 9, h: 0.35, fontSize: 13, italic: true, color: C.text2 });
+  T(s, "Costs almost nothing, and supports WHO safety-checklist culture.", { x: 0.5, y: 4.55, w: 9, h: 0.35, fontSize: 13, italic: true, color: C.text2 });
 
   // ---------- 9. After ----------
   s = content("Patient journey", "After surgery: we stay with them");
@@ -263,7 +269,7 @@ async function icon(name, color, size = 256) {
   s = content("Branded space", "Three zones, three levels of branding");
   const zones = [
     ["A", "Unrestricted", "Entrance, reception, family lounge, consult rooms, pre-op admission", "Full branding: logo walls, photography, screens, ceiling art over pre-op bays", C.accent1, "100%"],
-    ["B", "Semi-restricted", "Corridors to ORs, scrub sinks, sterile storage", "Paint colour, welded floor colour, cleanable wayfinding. No loose decor", "4F9D96", "40%"],
+    ["B", "Semi-restricted", "Corridors to ORs, scrub sinks, sterile storage", "Paint colour, welded floor colour, cleanable wayfinding. No loose decor", "A57A74", "40%"],
     ["C", "Restricted (OR)", "Operating theatres", "No decor (MoH D-3.3). Brand = paint, floor colour, light, sound, uniforms", C.text2, "10%"],
   ];
   zones.forEach((z, i) => {
@@ -280,7 +286,7 @@ async function icon(name, color, size = 256) {
 
   // ---------- 13. Inside OR ----------
   s = content("Branded space", "Inside the OR: brand without decoration");
-  const yes = [["FaPalette", "Paint colour", "Neutral walls + one brand-colour wall behind the team, in the MoH seamless epoxy-acrylic coating"],
+  const yes = [["FaPalette", "Paint colour", "Warm blush-neutral walls; Noya burgundy on one wall behind the anaesthesia side, away from the surgical field"],
                ["FaLayerGroup", "Floor colour", "Welded antistatic vinyl with a colour border around the table zone"],
                ["FaLightbulb", "Light", "Warm ambient light on patient entry, clinical white during surgery"],
                ["FaMusic", "Sound", "Licensed Noya calm playlist or the patient's own choice"]];
@@ -333,18 +339,18 @@ async function icon(name, color, size = 256) {
   // ---------- 16. Role colours ----------
   s = content("Uniforms", "Role colours: recognisable at a glance");
   const roles = [
-    ["1F3A5F", "Surgeons", "Name + \"Surgeon\""], ["6B3E75", "Anaesthesia", "Name + \"Anaesthesia\""],
-    ["1F7A74", "Scrub nurses", "Name + \"Scrub Nurse\""], ["5FAEA5", "Circulating nurses", "Name + \"Nurse\""],
-    ["8FBCD6", "Pre-op / PACU nurses", "Name + \"Nurse\""], ["8A9199", "Techs / assistants", "Name + role"],
-    ["C9C1B1", "CSSD / housekeeping", "Plain cap"], ["FFFFFF", "Trainees", "Role colour + white trim"],
+    ["6D3636", "Surgeons", "Name + \"Surgeon\""], ["3A3A3C", "Anaesthesia", "Name + \"Anaesthesia\""],
+    ["8C6E63", "Scrub nurses", "Name + \"Scrub Nurse\""], ["B98B82", "Circulating nurses", "Name + \"Nurse\""],
+    ["F3C79E", "Pre-op / PACU nurses", "Name + \"Nurse\""], ["9A9490", "Techs / assistants", "Name + role"],
+    ["D8CFC4", "CSSD / housekeeping", "Plain cap"], ["FFFFFF", "Trainees", "Role colour + white trim"],
   ];
   roles.forEach((r, i) => {
     const x = 0.5 + (i % 4) * 2.3, y = 1.2 + Math.floor(i / 4) * 1.75;
-    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: 2.1, h: 0.85, rectRadius: 0.1, fill: { color: r[0] }, line: { color: "C9C1B1", width: 1 }, objectName: "sw" + i });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w: 2.1, h: 0.85, rectRadius: 0.1, fill: { color: r[0] }, line: { color: "D8CFC4", width: 1 }, objectName: "sw" + i });
     T(s, r[1], { x, y: y + 0.95, w: 2.1, h: 0.32, fontSize: 13, bold: true, color: C.text2 });
     T(s, "Cap: " + r[2], { x, y: y + 1.27, w: 2.1, h: 0.3, fontSize: 11, color: C.text1 });
   });
-  T(s, "Swatches are placeholders. Final shades come from the Noya palette. Concierge and coordinators wear a fully branded uniform outside the OR.", { x: 0.5, y: 4.7, w: 9, h: 0.4, fontSize: 11, italic: true, color: C.accent5 });
+  T(s, "Noya palette: burgundy for surgeons, warm neutrals for the team. Concierge wears the full Noya uniform.", { x: 0.5, y: 4.7, w: 9, h: 0.4, fontSize: 11, italic: true, color: C.accent5 });
 
   // ---------- 17. Kit ----------
   s = content("Uniforms", "The reusable kit");
@@ -400,7 +406,7 @@ async function icon(name, color, size = 256) {
   T(s, [
     { text: "Approve the three-zone branding approach and the Noya Moment script", options: { bullet: { type: "number" }, breakLine: true } },
     { text: "Switch to reusable caps and patient gowns so they can carry print", options: { bullet: { type: "number" }, breakLine: true } },
-    { text: "Share the Noya brand guide to finalise colours", options: { bullet: { type: "number" }, breakLine: true } },
+    { text: "Approve the Noya burgundy-led role colour palette", options: { bullet: { type: "number" }, breakLine: true } },
     { text: "Name owners: Surgical Coordinator lead, IPC sign-off, procurement", options: { bullet: { type: "number" } } },
   ], { x: 0.6, y: 3.25, w: 8.8, h: 1.9, fontSize: 16, color: C.background1, valign: "top", paraSpaceAfter: 6 });
 

@@ -10,7 +10,7 @@
 >
 > **Confirmed print rule (from Noya):** any **single-use wearable is never printed** (masks, disposable caps, disposable gowns, gloves, shoe covers, disposable patient gowns). **Reusable items can be printed** (scrubs, fabric caps, warm-up jackets, reusable patient gowns, blankets), provided the print survives the 71 °C / 25 min wash. This replaces the assumptions in §3.2 and §4.
 >
-> Presentation: `Noya_OR_Patient_Journey_and_Branding.pptx` (source: `build/build_deck.js`).
+> Presentation: `Noya_OR_Patient_Journey_and_Branding.pptx` (source: `build/build_deck.js`). Styled in Noya branding: burgundy `#6D3636`, blush `#F9E5E5`, peach `#F3C79E`, logo from noyaclinic.sa.
 >
 > The key idea: **"can't be printed" doesn't mean "can't be branded."** In the OR, the brand comes through **colour, weave, light, sound, form and how staff behave**, not through printed logos.
 
