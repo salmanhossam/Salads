@@ -5,6 +5,9 @@
 > 1. **The Ministry of Health (MoH) list of materials you can't print on.** I have assumed the most common restrictions (see §3.1). Every item marked **"Confirm with MoH"** must be checked against the actual agreement before anything is ordered.
 > 2. **Noya's brand guidelines** (logo, colours, typeface, tone). Colours below are placeholders (`NOYA-PRIMARY`, `NOYA-ACCENT`, `NOYA-NEUTRAL`). Swap in the real values.
 >
+>
+> **Update after research (Saudi MoH sources, see §7):** No published Saudi MoH rule bans logos or printing on scrubs. The public rules are about **infection control**: the OR must have **no decorative parts** and **only necessary items**, walls/floor/ceiling must be seamless, and scrubs must be facility-laundered. So the "no-print" limits in Noya's agreement are probably **contract-specific**. Get the clause itself; nothing published replaces it.
+>
 > The key idea: **"can't be printed" doesn't mean "can't be branded."** In the OR, the brand comes through **colour, weave, light, sound, form and how staff behave**, not through printed logos.
 
 ---
@@ -90,9 +93,11 @@ This is the most emotional part of the journey and it costs almost nothing.
 
 | Zone | Areas | Branding level | Allowed |
 |------|-------|----------------|---------|
-| **A: Public** | Entrance, reception, family lounge, consultation rooms, corridors outside the surgical suite | **Full** | Printed graphics, logo walls, wayfinding, screens, brand photography, printed materials |
-| **B: Semi-restricted** | Admission, pre-op holding, PACU, staff change rooms, clean corridors | **Controlled** | Only cleanable, non-shedding surfaces: integrated wall-cladding colour, back-printed glass, ceiling panels (outside laminar flow), floor colour inlays. No paper, fabric banners or loose decor. |
-| **C: Restricted / sterile** | Operating rooms, scrub area, sterile store, CSSD | **No print** | Brand comes through **colour of built-in finishes, light, sound and uniforms only**. Nothing is added to sterile textiles, instruments or devices. |
+| **A: Public / unrestricted** | Entrance, reception, family lounge, consultation rooms, **pre-operative admission area** (MoH classifies it as unrestricted), offices, locker rooms | **Full** | Printed graphics, logo walls, wayfinding, screens, brand photography, printed materials |
+| **B: Semi-restricted** | Corridors leading to the ORs, scrub sinks, clean/sterile storage (and PACU if it sits inside the suite) | **Controlled** | Paint colour on seamless walls, welded floor colour, cleanable wayfinding. No paper, fabric banners, loose decor or extra items. |
+| **C: Restricted** | Operating theatres | **No print, no decor** | MoH audit item D-3.3 requires **no decorative parts**. D-3.6: **only necessary items**. Brand comes only from **paint colour, floor colour, light, sound and uniforms**. Nothing goes on sterile textiles, instruments or devices. |
+
+> Zone classification follows the MoH OR guideline (2022) and the MoH IPC auditors' guide (2025). Pre-op admission is **unrestricted**, so it is the best place to invest in brand atmosphere just before surgery.
 
 ### 3.2 Material matrix: what can and can't carry branding
 
@@ -103,15 +108,15 @@ This is the most emotional part of the journey and it costs almost nothing.
 | Sterile drapes & surgical gowns | C | **No** | None. Use standard supplier colour only. Don't modify anything certified as sterile. |
 | Instrument wraps, trays, sterile packs | C | **No** | None. Branding here is clinically meaningless and a regulatory risk. |
 | Medical equipment (anaesthesia machine, monitors, OR table, lights) | C | **No stickers or wraps** | None. Stickers void warranties, block cleaning and cover regulatory labels. Pick a single equipment colour family when buying (e.g., all white/grey) so the room looks calm and consistent. |
-| OR walls | C | **Confirm with MoH** | **Colour the cladding itself** (seamless antimicrobial HPL/glass panels in `NOYA-NEUTRAL` with one `NOYA-PRIMARY` accent wall). Integrated colour is a finish, not a print. Option: **back-painted/back-printed glass** (graphic sealed behind glass, fully wipeable). |
+| OR walls | C | **No graphics** | MoH requires a **seamless, bacteriostatic painted coating (epoxy-acrylic)** with no seams, joints or dividers and no decorative parts. Brand = **paint colour only** (`NOYA-NEUTRAL` + one `NOYA-PRIMARY` wall behind the anaesthesia/team side). ~~Back-printed glass panels~~ were dropped because they add joints and count as decoration. |
 | OR ceiling | C | **No** | Laminar-flow ceiling must not be modified. |
-| OR floor | C | No print | Seamless vinyl with **colour inlay** (e.g., brand-colour border around the table zone). |
-| OR doors | C/B | Regulatory signage only | Door leaf in `NOYA-PRIMARY`. Room number in brand typeface, cut vinyl on glass vision panel outside only (confirm). |
+| OR floor | C | No print | MoH: **2–5 mm antistatic vinyl sheet, welded seams**, rounded corners. Brand = vinyl colour; a **welded colour inlay** (border around the table zone) stays one continuous surface [Likely acceptable, confirm with IPC]. |
+| OR doors | C/B | Regulatory signage only | MoH: **sliding, electronically operated, not wood**, flush washable fittings. Brand = factory finish colour of the door leaf. Room number on the **corridor side** only. |
 | Ambient lighting | C | n/a | **Mood lighting in brand accent** during patient entry/exit, clinical white during surgery (check if the OR integration system supports it). |
 | Sound | C | n/a | Noya patient playlist (calm, licensed) + patient choice. |
-| Pre-op / PACU ceiling | B | Yes (cleanable panel) | **Ceiling graphic panels** (sky/nature in brand palette). Patients on trolleys look up. |
+| Pre-op ceiling | A (unrestricted) | Yes (cleanable) | **Ceiling graphic** (sky/nature in brand palette). Patients on trolleys look up. Allowed here because MoH classes pre-op admission as unrestricted. Don't do this in PACU if PACU is inside the suite. |
 | Pre-op / PACU curtains | B | **Confirm** | Disposable antimicrobial curtains in brand colour (colour chosen from supplier range, no print). |
-| Patient gown | B | Confirm | **Woven or dyed pattern** in brand colours (a jacquard weave isn't print). Dignified wrap-around design. |
+| Patient gown + head cover | A→B | Confirm | MoH: patients entering the semi-restricted area wear hospital attire **with hair covered**. **Woven or dyed pattern** in brand colours (a jacquard weave isn't print), dignified wrap-around gown + matching patient cap. |
 | Blankets | B | Confirm | Woven jacquard Noya pattern; must survive thermal disinfection laundering. |
 | Scrubs | B/C | **Likely restricted** | **Colour-coding system** (§4) + optional small embroidered/woven logo above chest pocket if MoH allows. If not, colour alone. |
 | Scrub caps | C | Confirm | Reusable fabric caps with **name and role** (patient safety practice). Brand colour fabric. |
@@ -152,14 +157,18 @@ Colour coding does two jobs: it helps patients and staff recognise roles instant
 
 | Element | Spec |
 |--------|------|
-| Fabric | Poly-cotton or poly-viscose blend, low-lint, colourfast at high-temperature washing. Ask supplier for antimicrobial finish options. |
-| Laundering | Must withstand **thermal disinfection** (typical benchmark: 65 °C for 10 min or 71 °C for 3 min [Likely, based on UK HTM 01-04; confirm local MoH standard]). Hospital-laundered only, no home washing. |
+| Fabric | Poly-cotton or poly-viscose blend, **low-lint** (MoH asks for material that contains shed skin particles), colourfast at high-temperature washing. |
+| Laundering | MoH IPC auditors' guide: hot wash cycle at **minimum 71 °C for 25 minutes** (heat disinfection). MoH OR guideline: **facility laundered, not home laundered**. Any logo or embroidery thread must survive this. Test with 50+ cycles. |
+| Sleeves | MoH: in the restricted area, wear **long-sleeved, fully closed warm-up jackets or long-sleeved scrub shirts**. This applies to everyone in the room, not only the surgical team. |
 | Cut | Fitted but not tight: V-neck top, 2 pockets max, drawstring + elastic trousers. Male and female fits. |
 | Branding | **Option A (if MoH allows):** small embroidered logo above left pocket, tone-on-tone (e.g., navy on navy) for subtlety and less lint. **Option B (if not):** colour only, with brand carried by consistent colour and cut. |
-| No | Prints, heat transfers, external jackets/fleece inside the OR, lanyards, jewellery. |
+| No | Prints/heat transfers (assumed per Noya agreement), **personal** jackets or fleece (only facility-laundered warm-up jackets), lanyards, jewellery (MoH requires removal of rings, bracelets and watches before scrubbing), T-shirts showing under scrubs. |
+
+**Warm-up jacket = branding opportunity.** MoH makes it part of surgical attire, so it's worn visibly in the OR. Use the role colour, a snap closure, and a tone-on-tone woven logo label if the agreement allows.
 
 ### 4.3 Name caps
 
+- MoH allows head covers that are **disposable or launderable reusable**, laundered regularly by the facility. Facial hair must be covered too.
 - Reusable cotton caps in role colour, **name and role in brand typeface**.
 - Print vs embroidery: this is where the MoH restriction is most likely to bite. If neither is permitted, use **disposable caps with a writable band** (permanent marker, done daily). The safety benefit stays even without the branding.
 - Caps are laundered with scrubs or replaced per protocol.
@@ -170,7 +179,7 @@ Colour coding does two jobs: it helps patients and staff recognise roles instant
 |------|---------|
 | White coats (surgeons, consults) | Embroidered Noya logo + name + specialty |
 | Concierge/coordinator | Tailored uniform in brand colours, scarf/tie accessory, name badge |
-| Staff jackets for corridors (zone A only) | Branded fleece/softshell, **removed before entering zone B/C** |
+| Staff jackets for corridors (zone A only) | Branded fleece/softshell, **removed before entering zone B/C** (not the same garment as the OR warm-up jacket) |
 
 ---
 
@@ -200,10 +209,37 @@ Colour coding does two jobs: it helps patients and staff recognise roles instant
 
 ## 6. Open Questions (answers needed before production)
 
-1. **What exactly is on the MoH no-print list?** Textiles only? Scrubs and caps too? Wall graphics? Does it ban embroidery and woven labels, or only print?
+1. **Get the exact clause from Noya's agreement.** Nothing published by the Saudi MoH bans printing on scrubs or uniforms (see §7), so the restriction comes from the agreement. What exactly is on the no-print list? Textiles only? Scrubs and caps too? Wall graphics? Does it ban embroidery and woven labels, or only print?
 2. Is the ban about **sterility/infection control** (so embroidery or woven patterns may be fine) or about **advertising/commercial branding in clinical areas** (so any logo may be banned)? The answer changes most of §3–4.
 3. Noya brand guide: colours, typeface, logo usage rules.
 4. Number of ORs, specialties (day surgery vs inpatient), and expected cases per day. These affect staffing for coordinator and family updates.
 5. Is the OR lighting/integration system already chosen? (Needed for mood lighting.)
 6. In-house laundry or outsourced? (Affects fabric and logo choices.)
 7. Any existing hospital colour code for roles that the MoH expects?
+
+---
+
+## 7. Research: What Saudi MoH Sources Actually Say
+
+| Topic | Rule | Source |
+|------|------|--------|
+| OR zones | Three zones: unrestricted (incl. **pre-op admission**, waiting, offices, lockers), semi-restricted (corridors to ORs, scrub sinks, sterile storage), restricted (operating rooms). Clear demarcation required. | MoH OR IPC Guideline v1.1 (2022); MoH IPC Auditors' Guide v6 (2025), D-3.2 |
+| OR walls | Seamless bacteriostatic painted coating (epoxy-acrylic); no cracks, seams, open joints, crevices or dividers. | OR Guideline 2022, General Req. 1 |
+| OR floor | Slip-resistant, 2–5 mm antistatic vinyl sheet, welded seams, rounded corners. | OR Guideline 2022, General Req. 2 |
+| OR ceiling | Smooth, non-porous, monolithic, no perforations. | OR Guideline 2022, General Req. 3 |
+| Decoration | Floors, walls and ceiling one piece, **no decorative parts**. | Auditors' Guide 2025, D-3.3 |
+| Items in OR | **Only necessary items** in the restricted area; storage cabinets minimised. | Auditors' Guide 2025, D-3.6 |
+| Doors | Sliding, electronically operated, not wood. | OR Guideline 2022, General Req. 4 |
+| Attire | Head cover, mask, scrub suit, **warm-up jacket**, shoes. Facility laundered, not home laundered. Long-sleeved jackets or shirts in the restricted area. Personal clothing fully covered. | OR Guideline 2022, "Proper Surgical Attire" |
+| Head cover | Disposable or launderable reusable; facility laundering process required; facial hair covered. | OR Guideline 2022 |
+| Jewellery | Rings, bracelets, watches removed before surgical scrub. | OR Guideline 2022 |
+| Laundry | Hot wash at minimum **71 °C for 25 minutes** (heat disinfection). | Auditors' Guide 2025, linen services |
+| Logos / printing on uniforms | **No Saudi MoH rule found.** Vendor blogs claim MoH colour or fabric mandates but cite no primary document, so treat those claims as marketing. | — |
+| Advertising | Private health institutions may advertise only in line with MoH's health advertising regulations. Patient-facing marketing (journey stage 1, 13) likely needs MoH approval [Likely]. | Lexis Middle East summaries |
+
+**Sources**
+- [MoH: Infection Control Guidelines in the Operating Room, v1.1, March 2022 (GDIPC)](https://jed-s3.bluvalt.com/psj1-ifn-s3-ifn01/files/03/Guidelines/Infection-Control-Guidelines-in-Operating-Room-OR-V1.1-2022.pdf)
+- [MoH: National Guide for Auditors in Infection Control Auditing Strategies for Healthcare Facilities (v6, 2025)](https://www.moh.gov.sa/Ministry/Rules/Documents/National-Guide-Auditors-Infection-Control-Version-5.pdf)
+- [Lexis Middle East: KSA Health Ministry enforces compliance (2025)](https://www.lexis.ae/2025/02/18/ksa-health-ministry-enforces-compliance/)
+- [Oman MoH Dress Code Policy (regional comparison only)](https://moh.gov.om/media/oqnh5stk/dress-code-policy.pdf)
+- [Public Perceptions of Surgeon Attire in Saudi Arabia (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11586491/)
